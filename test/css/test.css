@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-image: url(../images/mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----TOPNAV START---- */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  width: 20%;
+  height: 40px;
+  background-color: black;
+  opacity: .9;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: snow;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+nav ul li a:hover {
+  color: black;
+  background-color: snow;
+}
+
+nav ul li ul li {
+  width: 100%;
+  display: none;
+}
+
+nav ul li:hover ul li {
+  display: block;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    font-size: 16px;
+  }
+}
+
+/* ----TOPNAV END---- */
+.main-wrapper {
+  margin: auto;
+  width: auto;
+  max-width: 1400px;
+  padding: 22px;
+}
+
+section {
+  background-color: rgba(200, 225, 255, 0.75);
+  border: 1px solid black;
+  margin-top: 42px;
+}
+
+article {
+  padding: 16px 42px;
+}
+
+code {
+  color: #00dd00;
+  background-color: black;
+  padding: 0 8px;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: black;
+  opacity: .9;
+  color: snow;
+  padding: 4%;
+  text-align: center;
+}
+
+svg {
+  fill: lime;
+  -webkit-filter: drop-shadow(4px 4px 4px magenta) drop-shadow(-4px -4px 4px blue);
+          filter: drop-shadow(4px 4px 4px magenta) drop-shadow(-4px -4px 4px blue);
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+svg:hover {
+  fill: magenta;
+  -webkit-filter: drop-shadow(4px 4px 4px blue) drop-shadow(-4px -4px 4px lime);
+          filter: drop-shadow(4px 4px 4px blue) drop-shadow(-4px -4px 4px lime);
+}
+
+.musen {
+  margin: auto;
+  margin-top: 22px;
+  max-width: 75%;
+  z-index: -1;
+}
+/*# sourceMappingURL=test.css.map */
